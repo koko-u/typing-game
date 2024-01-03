@@ -1,5 +1,6 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig } from '@angular/core'
+import { provideNgIconsConfig } from '@ng-icons/core'
 
 export const appConfig: ApplicationConfig = {
-  providers: [],
-};
+  providers: [provideNgIconsConfig({ size: '1.5rem' })],
+}

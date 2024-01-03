@@ -1,8 +1,10 @@
 import { Component } from '@angular/core'
+import { NgIconComponent, provideIcons } from '@ng-icons/core'
 
 @Component({
   standalone: true,
-  imports: [],
+  imports: [NgIconComponent],
+  viewProviders: [provideIcons({})],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styles: ``,
