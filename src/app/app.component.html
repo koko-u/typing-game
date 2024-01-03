@@ -1,1 +1,27 @@
-<div>App Component</div>
+<div class="container-fluid">
+    <div class="mt-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12 mx-auto border border-2 rounded shadow">
+                <div class="p-4">
+                    <h2 class="text-center mb-4">Typing Challenge</h2>
+                    <div class="fs-2 mb-4">
+                        @for(c of testText(); track c.c) {
+                        <span [ngStyle]="{ 'color': c.color }">{{c.c}}</span>
+                        }
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control form-control-lg" id="inputText" name="inputText"
+                            [value]="inputText()" (input)="onChangeInput($event)" (keyup.enter)="gotoNextTest()"
+                            autofocus>
+                    </div>
+                    @if (isSuccess()) {
+                    <div class="fs-3 mb-4 text-center text-success">
+                        <ng-icon name="bootstrapStars"></ng-icon> Great. It's a precise keystroke <ng-icon
+                            name="bootstrapStars"></ng-icon>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
