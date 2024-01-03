@@ -1,8 +1,8 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ViewEncapsulation } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
 @Component({
-  selector: 'typing-game-nx-welcome',
+  selector: 'app-nx-welcome',
   standalone: true,
   imports: [CommonModule],
   template: `

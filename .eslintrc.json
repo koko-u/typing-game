@@ -32,7 +32,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "typing-game",
+            "prefix": "app",
             "style": "kebab-case"
           }
         ]
