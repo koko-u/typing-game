@@ -1,12 +1,11 @@
 import { Component } from '@angular/core'
-import { NxWelcomeComponent } from './nx-welcome.component'
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
+  imports: [],
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styles: ``,
 })
 export class AppComponent {
   title = 'typing-game'
